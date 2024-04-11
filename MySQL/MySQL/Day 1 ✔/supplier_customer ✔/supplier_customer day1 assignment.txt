@@ -1,10 +1,40 @@
-1. display all suppliers who statys in state either in  california 
-or Texas or Arkansas
+1. display all suppliers who statys in state either in  california or Texas or Arkansas
+
+
+select * from suppliers where state in('California','Texas','Arkansas');
+
+-----------------------------------------------
 2. list all suppliers who does not stay in Springdale
+
+select * from suppliers where state!='Springdale';
+-----------------------------------------------
 3. find orderid and customerid for orders place on date 18-feb-16
+
+select orderid, customerid from orders where orderdate='18-02-2016';
+-----------------------------------------------
 4. find orderid and customerid for orders place on feb 2016
+
+select oderid , customerid from orders where orderdate between '01-02-2016' and '29-02-2016';
+-----------------------------------------------
 5. find all customers with name 'Reynolds', or Anderson
+
+select * from customers where name in ('Reynolds','Anderson');
+
+-----------------------------------------------
 6. find all suppliers with supplierid >=200 and <=700
+
+select * from suppliers where supplierid between 200 and 700;
+-----------------------------------------------
 7. find all customers for whome favorite_website is not given
+
+select * from customers where fav_website is null;
+
+-----------------------------------------------
 8. find all customers for whome favorite_website is given
+
+select * from customers where fav_website is not null;
+-----------------------------------------------
 9. find all suppliers with supplierid not  >=200 and  not <=700
+
+select * from suplliers where supplierid not between 200 and 700;
+-----------------------------------------------
