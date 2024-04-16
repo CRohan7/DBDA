@@ -12,7 +12,7 @@ for i in list1:
     if(i==20):
         a=list1.index(20)
         list1[a]=200
-        break
+    
 
 print(list1)
         
