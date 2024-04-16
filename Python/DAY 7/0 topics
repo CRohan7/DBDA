@@ -1,0 +1,41 @@
+FUNCTIONS:
+        - Function's code is stored in RAM, hence has memory occupied in RAM
+        - Likewise, separate memory is alloted for variables and parameters
+        - Any Function in any Programming lang returns only single return value
+        - In hardware terms, functions are called as 'Context Switch'
+        - #SYNTAX:
+               
+        def my_function():    #function declaration and definition
+                """
+                   This is doc string
+                """
+                print("How You Doing!")
+                return 0
+
+        my_function()  # function call
+
+        - Every function is an object of class function
+
+        - Functions without return value is possible. Then too it returns 'None' value
+        - 'None' is special symbol in python. It means nothing. bool(None)=False
+
+        - Arguments are passed by value function(100)
+        - Parameter catches the values def function(x)
+
+PARAMETERS & ARGUMENTS:
+
+        - def sample_fun(a1,a2,/,a3,*arg,a4,**kwarg):
+
+        - Here, 
+          a1,a2   -> position only 
+          /       -> nothing
+          a3      -> standard
+          *arg    -> Positional Arguments
+          a4      -> keyword
+          **kwarg -> Arbitary Keyword Argument 
+
+
+
+
+
+          
