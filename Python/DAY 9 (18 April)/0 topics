@@ -1,0 +1,52 @@
+Non Local Scope:
+    - Non local means the variable is not present here search it outside the function
+
+LAMBDA FUCNTION:
+    - It is a single line fucntion
+    - It can take any number of parameters
+    - It does not have a name
+    - It creates function object
+
+    - Any normal function can also be used wherever lambda is used
+    - It is not faster than normal function 
+    - Its not a inline function
+    SYNTAX:
+        lambda <arguments> : < one line of operation>
+
+      ex - lambda x:x**2
+    - Lambda fucntion doesnt have a name
+    - Call Lambda fucntion
+      ex - (lambda x:x**2)(3)
+    - 3 will be taken as argument by lambda function and square 3 will be returned  
+MAP:
+
+GENERATOR FUNCTION:
+
+
+OOP WITH PYTHON:
+  
+  ENCAPSULATION:
+
+  ABSTRACTION:
+
+  INHERITANCE:
+
+  POLYMORPHISM:
+
+  # SELF
+  - Self is like this keyword in java
+  - Used as first parameter in instance methods
+
+  # TYPES OF VARIBLES: 
+  1. INSTANCE :
+  - Can be created only using self keyword inside instance method
+  - Always has access using self keyword
+
+        
+  2. CLASS / STATIC :
+  - Can be created in any method
+  - Can be created outside any method in class/inside a method using class name/cls
+  
+
+
+  
