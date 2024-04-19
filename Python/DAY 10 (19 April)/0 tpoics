@@ -1,0 +1,54 @@
+- If the class variable and instance variable has same name and variable is called outside class with the name
+  then value of instance is preferred 
+
+- You can add and delete atrributes to single instance variable 
+- First parameter of class method is cls
+- First parameter of instance method is self
+-                    Static method has no cls or delf parameters
+
+- Python creates object using __new__() to create objects
+- __init__ initializes the created objects. It is not the constructor 
+- If new and init are not called explicity then pvm calls it automatically
+- When object is created then new is called and then init is called internally
+
+DATA HIDING:
+    - Use two underscores before the variablename
+    - Whenever the variable is created with __  underscores before it, then python renames the   
+      variable  as _ClassName__VariableName
+    - Because the variables name is changed the variable cannot be accessed
+    - It is called Name Mangling
+    - Common attributes of every class:
+    1. __dict__ : 
+    2. __doc__ : Entered at first line of the code using """ """
+    3. __name__ : Class name
+    4. __module__ : Module name in which class id defined
+    5. __bases__ : tuple containing base classes, the order of their occurrence in base class list
+
+INHERITANCE:
+            0. SIMPLE    1. MULTI-LEVEL  2. MULTIPLE 3. HYBRID
+
+    1. B EXTENDS A ,C EXTENDS B  -> class b(a) , clas c(b)
+    2. A AND B IS EXTENDED BY C -> class c(a,b)
+    3. B EXTENDS A , C EXTENDS B , E EXTENDS B AND C -> class b(a) , class c(b) , class e(b,c)
+    
+    - super().__init__() needs ti be declared in child class to initilize the objects of parent class
+    - It can also be only when there is one parent
+
+    - For multiple parent class, <Parent_class>.__init__()
+    - It is declared inside init of child class
+    - object class is the super parent of all classes
+
+METHOD OVERRIDING:
+  - TYPES: REPLACING BASE METHOD OR ADDING IN BASE METHOD 
+
+*************************imp
+__str()__:
+      - str is used to give user friendly and readable obj representation
+      - If str is not defined for an object then its repr is called
+
+__repr()__:
+      - It is used to give debugging friendly messages to developer
+      - objects/items inside tuple, list, set, dict,etc the repr of elements will be called
+      - for string str is called
+      - for integer str and repr both are same
+      - 
